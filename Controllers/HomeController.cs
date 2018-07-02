@@ -10,7 +10,8 @@ namespace FriendLetter.Controllers
         //In order for our server to send it as usable HTML, we need to add this decorator.
         [Produces("text/html")]
 
-        [Route("/letter")]
+        //[Route("/letter")]
+        [Route("/")]
         public string Letter()
         {
           return
