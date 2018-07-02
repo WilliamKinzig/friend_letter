@@ -10,13 +10,23 @@ namespace FriendLetter.Controllers
         //In order for our server to send it as usable HTML, we need to add this decorator.
         [Produces("text/html")]
 
-        //[Route("/letter")]
-        [Route("/")]
+  /***************  May have to toggle mothods  *********************/
+        // [Route("/letter")]  // could be my_fantastic_journal if you want
+        // public ActionResult Letter()
+        // {
+        //   return View();
+        // }
+        // [Route("/")]  // could be my_fantastic_journal if you want
+        // public ActionResult Letter()
+        // {
+        //   return View();
+        // }
         [Route("/journal")]  // could be my_fantastic_journal if you want
         public ActionResult Letter()
         {
           return View();
         }
+/********************************************************************/
         // public string Letter()
         // {
         //   return
