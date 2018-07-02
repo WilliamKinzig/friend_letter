@@ -28,3 +28,7 @@ run > dotnet run
 
 make a folder called Controllers. Within that folder let's also create a file called HomeController.cs
 run > dotnet run
+
+add these for views csthml
+Views/Home/Letter.cshtml
+Views/Home/Journal.cshtml
