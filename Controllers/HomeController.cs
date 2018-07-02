@@ -17,7 +17,6 @@ namespace FriendLetter.Controllers
         {
           return View();
         }
-
         // public string Letter()
         // {
         //   return
