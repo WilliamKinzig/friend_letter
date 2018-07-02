@@ -32,3 +32,21 @@ run > dotnet run
 add these for views csthml
 Views/Home/Letter.cshtml
 Views/Home/Journal.cshtml
+
+
+├───FriendLetter.Solution
+   ├───FriendLetter
+       ├───Controllers
+              ├───HomeController.cs
+       ├───Models
+       ├───Views
+              ├───Home
+                     ├───Journal.cshtml
+       ├───FriendLetter.csproj
+       ├───.gitignore
+       ├───README.md
+       ├───Program.cs
+       ├───Startup.cs
+       ├───Properties
+       ├───wwwroot
+       ├───Dependencies
