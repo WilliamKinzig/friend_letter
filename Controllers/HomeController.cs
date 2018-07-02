@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using FriendLetter.Models;
 
 namespace FriendLetter.Controllers
 {
@@ -7,10 +8,10 @@ namespace FriendLetter.Controllers
     {
         //public string Hello() { return "Hello friend!"; }
         //public string Goodbye() { return "Goodbye friend."; }
-        //In order for our server to send it as usable HTML, we need to add this decorator.
-        [Produces("text/html")]
 
-  /***************  May have to toggle mothods  *********************/
+        //In order for our server to send it as usable HTML, we need to add this decorator.
+        //////[Produces("text/html")]
+
         // [Route("/letter")]  // could be my_fantastic_journal if you want
         // public ActionResult Letter()
         // {
@@ -21,11 +22,23 @@ namespace FriendLetter.Controllers
         // {
         //   return View();
         // }
-        [Route("/journal")]  // could be my_fantastic_journal if you want
-        public ActionResult Letter()
+        // [Route("/journal")]  // could be my_fantastic_journal if you want
+        // public ActionResult Letter()
+        // {
+        //   return View();
+        // }
+        [Route("/")]
+        public ActionResult Hello()
         {
-          return View();
+          LetterVariable myLetterVariable = new LetterVariable();
+          myLetterVariable.SetRecipient("Lina");
+          myLetterVariable.SetSender("John");
+          return View(myLetterVariable);
         }
+
+/********************************************************************/
+/********************** GARBAGE OLD *********************************/
+/********************************************************************/
 /********************************************************************/
         // public string Letter()
         // {
