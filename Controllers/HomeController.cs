@@ -40,6 +40,7 @@ namespace FriendLetter.Controllers
         // {
         // return View();
         // }
+/********************** BACK TO TOP *****************************/
         [Route("/greeting_card")]
         public ActionResult GreetingCard()
         {
